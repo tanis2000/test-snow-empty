@@ -1,0 +1,32 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=haxelib run flow build mac --debug -DHXCPP_DEBUGGER",
+				"runPath=${workspaceRoot}/bin/mac64/",
+				"runCommand=snow_empty.app/Contents/MacOS/snow_empty",
+				"runInTerminal=false"
+			],
+			"name": "Build and debug",
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		},
+		{
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"runPath=${workspaceRoot}/bin/mac64/",
+				"runCommand=snow_empty.app/Contents/MacOS/snow_empty",
+				"runInTerminal=false"
+			],
+			"name": "Debug",
+			"type": "hxcpp",
+			"request": "launch",
+			"program": "",
+			"stopOnEntry": true
+		}
+	]
+}
